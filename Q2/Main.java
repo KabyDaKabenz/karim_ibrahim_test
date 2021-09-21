@@ -1,4 +1,11 @@
-public class Main {
+/**
+ * @author Karim Ibrahim
+ * 
+ * Program for comparing two version strings. The program takes in two version strings and shows which one is greater or tests for equality.
+ * The program doesn't support the passing of null values to the compare method as they are not valid version strings.
+ *
+ */
+public class VersionStringCompare {
 	
 	public static void main(String[] args) {
 		
@@ -113,6 +120,10 @@ public class Main {
 		
 	}
 	
+	/**
+	 * This method takes the integer resulting from the comparison and interprets it for better readability for the user.
+	 * @param result the integer resulting from the comparison.
+	 */
 	public static void stringifyResult(int result) {
 		
 		if(result > 0) {
