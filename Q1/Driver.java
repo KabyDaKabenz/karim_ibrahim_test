@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
-public class Driver {
+/**
+ * @author Karim Ibrahim
+ * This program prompts the user for two coordinates from the user and tests if there is any overlap.
+ *
+ */
+public class OverlapTester {
 
 	public static void main(String[] args) {
 		
@@ -10,11 +15,12 @@ public class Driver {
 		
 		int x1 = 0, x2 = 0;
 		
+		// Try Catch block in case the user types in an invalid values.
 		try {
 			x1 = keyboard.nextInt();
 		    x2 = keyboard.nextInt();
 		} catch(Exception e) {
-			System.out.println("Invalid input. Input must be a number.");
+			System.out.println("Invalid input. Input must be an Integer.");
 			System.out.println("Program terminated.");
 		}
 		
@@ -30,6 +36,7 @@ public class Driver {
 			System.out.println("Program terminated.");
 		}
 		
+		// Testing for overlap.
 		if(x2 >= x4) {
 			if(x4 > x1) {
 				System.out.println("The two lines overlap");
@@ -49,3 +56,4 @@ public class Driver {
 	}
 
 }
+
